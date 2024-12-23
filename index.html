@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Sederhana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Forum</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Kategori</a></li>
+                <li><a href="#">Tentang</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section class="board-list">
+            <h2>Papan Diskusi</h2>
+            <ul>
+                <li><a href="#">Teknologi</a></li>
+                <li><a href="#">Seni</a></li>
+                <li><a href="#">Musik</a></li>
+            </ul>
+        </section>
+
+        <section class="thread-list">
+            <h2>Thread Terbaru</h2>
+            <div class="thread">
+                <h3>Judul Thread 1</h3>
+                <p>Penulis: User123</p>
+                <p>Isi thread yang singkat...</p>
+                <a href="#">Baca Selengkapnya</a>
+            </div>
+            <div class="thread">
+                <h3>Judul Thread 2</h3>
+                <p>Penulis: Anonim</p>
+                <p>Isi thread yang singkat...</p>
+                <a href="#">Baca Selengkapnya</a>
+            </div>
+        </section>
+
+        <section class="create-thread">
+            <h2>Buat Thread Baru</h2>
+            <form action="buat_thread.php" method="post">
+                <label for="judul">Judul:</label>
+                <input type="text" id="judul" name="judul" required><br>
+
+                <label for="nama">Nama (opsional):</label>
+                <input type="text" id="nama" name="nama"><br>
+
+                <label for="konten">Konten:</label>
+                <textarea id="konten" name="konten" rows="5" required></textarea><br>
+
+                <button type="submit">Buat Thread</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Hak Cipta © 2024 Forum </p>
+    </footer>
+</body>
+</html>
